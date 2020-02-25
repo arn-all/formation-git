@@ -26,15 +26,16 @@ Une étude de la vision chez les poissons guppy
 ### Analyse
 
 - Traitement statistique lourd
-- Superviseur a un script Matlab
+- Superviseur a un script Matlab !
+
 
 ### Ça marche pas mal ! {data-background-image="https://media1.tenor.com/images/50af55a663d2554c5466c0fa2405cf4a/tenor.gif"}
 
 ###
 
 - Améliore traitement des données
-- Effet d'une variable pas compris 🙍
-- Sauvegarde sur disque dur
+- Effet d'une variable pas compris 🤔
+- Sauvegarde sur disque dur de temps en temps
 
 ### Réunion de projet {data-background-image="https://media1.tenor.com/images/c49caca24b326791a0b515c26aa6f81d/tenor.gif" data-background-opacity=0.6}
 
@@ -104,7 +105,7 @@ Une étude de la vision chez les poissons guppy
 
 ![](http://phdcomics.com/comics/archive/phd101212s.gif){width=40%}
 
-### Merge 
+### Conflits 
 
 > - GDrive  / Dropbox :  *"Salut à tous, Je vais modifier le document, merci d'attendre que j'aie fini, cdlt"*
 
@@ -126,10 +127,10 @@ end  do
 !Fin modifs de Maxime
 ```
 
+## Okay, parle nous de ton machin {data-background-image="https://media1.tenor.com/images/077eb8bb714bcd9fa73d5ed826b8a85f/tenor.gif?itemid=7242002" data-background-size=70% data-background-opacity=0.4}
 
-## Okay, parle nous de ton machin qu'on en finisse {data-background-image="https://media1.tenor.com/images/077eb8bb714bcd9fa73d5ed826b8a85f/tenor.gif?itemid=7242002" data-background-size=70% data-background-opacity=0.4}
+### Introducing Git 
 
-### Hi I'm Git 
 
 ###
 
@@ -180,22 +181,20 @@ Spyder
 ...
 
 
-### "Mouais"
-
-![](__untracked/text2334.png){ width=50%}
-
-
 ### 
 
 *Mon oncle m'a dit que les vrais dev' utilisent SVN*
 
 ![](git_popularity.png){ width=70%}
 
+### Reprenons
 
-### Git en local
+### Git "en local"
 
-- sélectionner des changements
-- En faire un commit.
+> - Sélectionner des changements
+> - En faire un commit.
+> - Éventuellement défaire des commits ("revert")
+
 
 ### Faire un commit ?
 
@@ -204,9 +203,10 @@ git add example.txt
 git commit --message "Added file: example.txt"
 ```
 
-### Git en équipe
+### Git "en ligne"
 
-- tous les X commit, *synchronisation* et *merge*
+- tous les X commit, *synchronisation* (et *merge*)
+
 
 ```
 git pull
