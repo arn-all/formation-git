@@ -179,12 +179,6 @@ Matlab
 Spyder 
 ...
 
-
-### "Mouais"
-
-![](__untracked/text2334.png){ width=50%}
-
-
 ### 
 
 *Mon oncle m'a dit que les vrais dev' utilisent SVN*
