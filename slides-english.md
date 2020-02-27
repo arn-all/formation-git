@@ -6,6 +6,12 @@ output:
     theme: night
 ---
 
+### ↓ Slides are here ↓
+
+[frama.link/git-teamdoc](frama.link/git-teamdoc)
+
+
+
 
 ## "A *post-mortem*" {data-background=#984447}
 
