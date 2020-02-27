@@ -28,6 +28,7 @@ Une étude de la vision chez les poissons guppy
 - Traitement statistique lourd
 - Superviseur a un script Matlab !
 
+
 ### Ça marche pas mal ! {data-background-image="https://media1.tenor.com/images/50af55a663d2554c5466c0fa2405cf4a/tenor.gif"}
 
 ###
@@ -126,10 +127,10 @@ end  do
 !Fin modifs de Maxime
 ```
 
-
 ## Okay, parle nous de ton machin {data-background-image="https://media1.tenor.com/images/077eb8bb714bcd9fa73d5ed826b8a85f/tenor.gif?itemid=7242002" data-background-size=70% data-background-opacity=0.4}
 
 ### Introducing Git 
+
 
 ###
 
@@ -179,6 +180,7 @@ Matlab
 Spyder 
 ...
 
+
 ### 
 
 *Mon oncle m'a dit que les vrais dev' utilisent SVN*
@@ -193,6 +195,7 @@ Spyder
 > - En faire un commit.
 > - Éventuellement défaire des commits ("revert")
 
+
 ### Faire un commit ?
 
 ```
@@ -203,6 +206,7 @@ git commit --message "Added file: example.txt"
 ### Git "en ligne"
 
 - tous les X commit, *synchronisation* (et *merge*)
+
 
 ```
 git pull

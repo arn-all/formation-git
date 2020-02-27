@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Arnaud Allera">
+  <title>you need version control</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://revealjs.com/css/reveal.css">
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="https://revealjs.com/css/theme/night.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'https://revealjs.com/css/print/pdf.css' : 'https://revealjs.com/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="https://revealjs.com/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">you need version control</h1>
+  <p class="author">Arnaud Allera</p>
+</section>
+
+<section><section id="ma-thèse-en-180-guppys" class="title-slide slide level2" data-background="#984447"><h2>“Ma thèse en 180 guppys”</h2></section><section id="section" class="slide level3" data-background-image="https://www.wikihow.com/images/thumb/b/b4/User-Completed-Image-Breed-Guppies-2016.03.10-07.33.02.0.jpeg/670px-User-Completed-Image-Breed-Guppies-2016.03.10-07.33.02.0.jpeg" data-background-opacity="0.5">
+<h3></h3>
+</section><section id="section-1" class="slide level3">
+<h3></h3>
+<p>Une étude de la vision chez les poissons guppy</p>
+</section><section id="cest-parti" class="slide level3">
+<h3>C’est parti !</h3>
+<ul>
+<li>un dossier</li>
+<li>un Excel</li>
+<li>une expérience sur la vision</li>
+</ul>
+</section><section id="analyse" class="slide level3">
+<h3>Analyse</h3>
+<ul>
+<li>Traitement statistique lourd</li>
+<li>Superviseur a un script Matlab</li>
+</ul>
+</section><section id="ça-marche-pas-mal" class="slide level3" data-background-image="https://media1.tenor.com/images/50af55a663d2554c5466c0fa2405cf4a/tenor.gif">
+<h3>Ça marche pas mal !</h3>
+</section><section id="section-2" class="slide level3">
+<h3></h3>
+<ul>
+<li>Améliore traitement des données</li>
+<li>Effet d’une variable pas compris 🙍</li>
+<li>Sauvegarde sur disque dur</li>
+</ul>
+</section><section id="réunion-de-projet" class="slide level3" data-background-image="https://media1.tenor.com/images/c49caca24b326791a0b515c26aa6f81d/tenor.gif" data-background-opacity="0.6">
+<h3>Réunion de projet</h3>
+</section><section id="section-3" class="slide level3">
+<h3></h3>
+<ul>
+<li class="fragment">Figures avec un script R “<code>script.r</code>”</li>
+<li class="fragment">Présente ses bons résultats</li>
+<li class="fragment">Superviseur veut une étude avec un protocole légèrement différent 🧐</li>
+<li class="fragment">Deadline !</li>
+</ul>
+</section><section id="nouveau-protocole" class="slide level3" data-background-image="https://media1.tenor.com/images/309b9cec20832b080d1ae07d748c0936/tenor.gif?itemid=5881117" data-background-opacity="0.6">
+<h3>Nouveau protocole</h3>
+</section><section id="section-4" class="slide level3">
+<h3></h3>
+<ul>
+<li>Lance une nouvelle expérience</li>
+<li>Copie script matlab (<code>matlab2.m</code>)</li>
+<li>Modifie ses figures (<code>script2.r</code>)</li>
+</ul>
+</section><section id="nouvelle-réunion" class="slide level3" data-background-image="https://media1.tenor.com/images/c49caca24b326791a0b515c26aa6f81d/tenor.gif" data-background-opacity="0.6">
+<h3>Nouvelle réunion</h3>
+</section><section id="section-5" class="slide level3">
+<h3></h3>
+<ul>
+<li class="fragment">Compare “<code>matlab.m</code>” et “<code>matlab2.m</code>”" en les modifiant légèrement</li>
+<li class="fragment">“<code>script-modifie.r</code>”, “<code>comparaison.r</code>”, “<code>matlab-modif.m</code>”, “<code>matlab2-modif.m</code>”</li>
+</ul>
+</section><section id="section-6" class="slide level3" data-background-image="https://media1.tenor.com/images/be5461967878f9229ae8656d62025a1e/tenor.gif?itemid=6219070" data-background-opacity="0.5">
+<h3></h3>
+<ul>
+<li><strong>Des Excel</strong></li>
+<li><strong>4 scripts</strong></li>
+<li><strong>Des figures de partout</strong></li>
+<li><strong>un PowerPoint</strong></li>
+</ul>
+</section><section id="victoire" class="slide level3" data-background-image="https://media1.tenor.com/images/03d14d3bfe12e420efd76774ab1615c9/tenor.gif?itemid=6007757" data-background-opacity="0.6">
+<h3>… victoire !! 🤸</h3>
+</section><section id="rédaction" class="slide level3">
+<h3>Rédaction</h3>
+<ul>
+<li>commence à écrire un article</li>
+<li>modifie les scripts pour les besoins de l’article</li>
+<li>rédige et soumet après quelques mois !</li>
+</ul>
+</section><section id="section-7" class="slide level3" data-background-image="https://media1.tenor.com/images/0fc841206cdd725df4aea0c17b99bfc0/tenor.gif?itemid=15513320" data-background-size="70%">
+<h3></h3>
+</section><section id="attends-une-seconde" class="slide level3" data-background-image="https://media1.tenor.com/images/cfcf8abd561bfdbf6c03396f6c14e3aa/tenor.gif?itemid=11565777" data-background-opacity="0.6" data-background-size="90%">
+<h3>Attends une seconde…</h3>
+</section><section id="catastrophe" class="slide level3">
+<h3>Catastrophe 🤯🤯🤯</h3>
+<ul>
+<li class="fragment"><code>matlab-Modi_Final2.m</code> prend la colonne N au lieu de N+1 🤯</li>
+<li class="fragment">depuis quand ? 🤷</li>
+<li class="fragment">toute l’analyse est mauvaise, plus d’effet significatif 🙊</li>
+<li class="fragment">retrait de l’article</li>
+<li class="fragment">design de l’expérience à revoir totalement</li>
+</ul>
+</section><section id="et-vous" class="slide level3" data-background="#984447">
+<h3>Et vous ?</h3>
+</section></section>
+<section><section id="tout-va-bien" class="title-slide slide level2" data-background-image="https://media1.tenor.com/images/346ee2fec9fe6712930b36f382475f6b/tenor.gif?itemid=10959043" data-background-opacity="0.4" data-background-size="95%"><h2>Tout va bien</h2></section><section id="fichiers" class="slide level3">
+<h3>Fichiers</h3>
+<p><img data-src="https://imgs.xkcd.com/comics/documents_2x.png" style="width:30.0%" /></p>
+</section><section id="révisions" class="slide level3">
+<h3>Révisions</h3>
+<p><img data-src="http://phdcomics.com/comics/archive/phd101212s.gif" style="width:40.0%" /></p>
+</section><section id="merge" class="slide level3">
+<h3>Merge</h3>
+<ul>
+<li class="fragment">GDrive / Dropbox : <em>“Salut à tous, Je vais modifier le document, merci d’attendre que j’aie fini, cdlt”</em></li>
+</ul>
+<ul>
+<li class="fragment">GDoc / Sharepoint / Overleaf : <em>“Qui vient de casser la biblio ?”</em>, guerres d’édition, connexion internet requise, pas de ‘branches’</li>
+</ul>
+</section><section id="dropbox" class="slide level3">
+<h3>Dropbox</h3>
+<ul>
+<li>snapshots : <em>“Est-ce que j’avais déjà ajouté X le 4 février 2018 ?”</em></li>
+<li>150 modifications entre deux snapshots… 😬</li>
+</ul>
+</section><section id="code" class="slide level3">
+<h3>Code</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode fortran"><code class="sourceCode fortran"><a class="sourceLine" id="cb1-1" title="1"><span class="co">!Modifs de Maxime</span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="kw">do</span>  i<span class="kw">=</span><span class="dv">0</span>,<span class="dv">20</span></a>
+<a class="sourceLine" id="cb1-3" title="3">    <span class="fu">print</span>  <span class="kw">*</span>,i</a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="kw">end  do</span></a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="co">!Fin modifs de Maxime</span></a></code></pre></div>
+</section></section>
+<section><section id="okay-parle-nous-de-ton-machin-quon-en-finisse" class="title-slide slide level2" data-background-image="https://media1.tenor.com/images/077eb8bb714bcd9fa73d5ed826b8a85f/tenor.gif?itemid=7242002" data-background-size="70%" data-background-opacity="0.4"><h2>Okay, parle nous de ton machin qu’on en finisse</h2></section><section id="hi-im-git" class="slide level3">
+<h3>Hi I’m Git</h3>
+</section><section id="section-8" class="slide level3">
+<h3></h3>
+<ul>
+<li>1 dossier : 1 dépôt</li>
+<li>des évènements (un historique)</li>
+<li>des “snapshots” (commits)</li>
+</ul>
+<p><img data-src="https://blog.jetpulp.fr/wp-content/uploads/sites/2/2018/11/schema-tuto-branch-and-commit-head-tempsjetpulp.jpg" style="width:40.0%" /></p>
+</section><section id="section-9" class="slide level3">
+<h3></h3>
+<ul>
+<li>Un graph, où <em>coexistent</em> des branches</li>
+</ul>
+<p><img data-src="https://blog.jetpulp.fr/wp-content/uploads/sites/2/2018/11/schema-tuto-merge-git-branch-merge-commit-jetpulp.jpg" style="width:40.0%" /></p>
+<ul>
+<li>Un système décentralisé</li>
+</ul>
+</section><section id="section-10" class="slide level3">
+<h3></h3>
+<ul>
+<li>Un ensemble de branches = un projet organisé</li>
+</ul>
+<p><img data-src="https://blog.jetpulp.fr/wp-content/uploads/sites/2/2018/11/schema-tuto-git-workflow-feature-dev-master-merge-jetpulp.jpg" style="width:40.0%" /></p>
+</section><section id="pour-commencer" class="slide level3">
+<h3>Pour commencer</h3>
+<pre><code>git init</code></pre>
+</section><section id="il-faut-taper-des-commandes" class="slide level3" data-background-image="https://media1.tenor.com/images/0562ded117922b0f32dc988d76c7e910/tenor.gif?itemid=5385689" data-background-opacity="0.6">
+<h3>Il faut taper des commandes ?</h3>
+</section><section id="section-11" class="slide level3" data-background-image="https://desktop.github.com/images/github-desktop-screenshot-windows.png" data-background-opacity="0.4">
+<h3></h3>
+<p>Nope.</p>
+<p><a href="https://www.sublimemerge.com/#light">Sublime Merge</a> <a href="https://desktop.github.com/">Github Desktop</a> <a href="https://github.atom.io/">Atom</a></p>
+<p>XCode OverLeaf VS Code Matlab Spyder …</p>
+</section><section id="mouais" class="slide level3">
+<h3>“Mouais”</h3>
+<p><img data-src="__untracked/text2334.png" style="width:50.0%" /></p>
+</section><section id="section-12" class="slide level3">
+<h3></h3>
+<p><em>Mon oncle m’a dit que les vrais dev’ utilisent SVN</em></p>
+<p><img data-src="git_popularity.png" style="width:70.0%" /></p>
+</section><section id="git-en-local" class="slide level3">
+<h3>Git en local</h3>
+<ul>
+<li>sélectionner des changements</li>
+<li>En faire un commit.</li>
+</ul>
+</section><section id="faire-un-commit" class="slide level3">
+<h3>Faire un commit ?</h3>
+<pre><code>git add example.txt
+git commit --message &quot;Added file: example.txt&quot;</code></pre>
+</section><section id="git-en-équipe" class="slide level3">
+<h3>Git en équipe</h3>
+<ul>
+<li>tous les X commit, <em>synchronisation</em> et <em>merge</em></li>
+</ul>
+<pre><code>git pull
+git push</code></pre>
+</section><section id="section-13" class="slide level3">
+<h3></h3>
+<p>Et c’est tout ! Git permet maintenant :</p>
+<ul>
+<li>merge automatique</li>
+<li>“revert”</li>
+<li>“blame”, “history”</li>
+</ul>
+</section><section id="section-14" class="slide level3">
+<h3></h3>
+<p>Pour rester organisé :</p>
+<ul>
+<li>messages des commit</li>
+<li>branches</li>
+</ul>
+</section></section>
+<section><section id="démos" class="title-slide slide level2" data-background-image="https://media1.tenor.com/images/f250c971767587d622373ceb638e8fbb/tenor.gif?itemid=10300477" data-background-opacity="0.7"><h2>Démos</h2></section><section id="créer-un-projet" class="slide level3">
+<h3>Créer un projet</h3>
+<ul>
+<li class="fragment">Créer le dépôt localement</li>
+<li class="fragment">Le mettre sur git*.com</li>
+</ul>
+</section><section id="cloner-un-projet" class="slide level3">
+<h3>Cloner un projet</h3>
+<ul>
+<li class="fragment">Le récupérer sur git*.com</li>
+</ul>
+</section><section id="synchroniser-son-travail-commits" class="slide level3">
+<h3>Synchroniser son travail (commits)</h3>
+</section><section id="organiser-son-travail-branches" class="slide level3">
+<h3>Organiser son travail (branches)</h3>
+</section><section id="collaborer-merges" class="slide level3">
+<h3>Collaborer (merges)</h3>
+</section><section id="lintégration-continue-preciso" class="slide level3">
+<h3>L’intégration continue (PreciSo)</h3>
+</section></section>
+<section><section id="cas-concrets" class="title-slide slide level2" data-background-image="https://media1.tenor.com/images/4c8da6b945b3d8a8a2d095bd9aa50514/tenor.gif" data-background-size="70%" data-background-opacity="0.7"><h2>Cas concrets</h2></section><section id="rédiger-un-article" class="slide level3">
+<h3>Rédiger un article</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1">.</a>
+<a class="sourceLine" id="cb5-2" title="2">├── part_1.tex</a>
+<a class="sourceLine" id="cb5-3" title="3">├── part_2.tex</a>
+<a class="sourceLine" id="cb5-4" title="4">├── main.tex</a>
+<a class="sourceLine" id="cb5-5" title="5">├── biblio.bib</a>
+<a class="sourceLine" id="cb5-6" title="6">└── img<span class="op">/</span>             </a>
+<a class="sourceLine" id="cb5-7" title="7"> </a></code></pre></div>
+<p>🤫 Tout projet Overleaf est un dépôt Git !</p>
+</section><section id="suivre-une-manip" class="slide level3">
+<h3>Suivre une manip</h3>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1">.</a>
+<a class="sourceLine" id="cb6-2" title="2">├── DSC<span class="op">-</span>316L<span class="op">-</span>2CperMin<span class="dv">-2020-03</span><span class="fl">-20.</span>txt <span class="co">## raw data</span></a>
+<a class="sourceLine" id="cb6-3" title="3">├── analysis.m                       <span class="co">## matlab script</span></a>
+<a class="sourceLine" id="cb6-4" title="4">├── data.csv                         <span class="co">## output of the script</span></a>
+<a class="sourceLine" id="cb6-5" title="5">└── graph.pdf                        <span class="co">## a figure</span></a>
+<a class="sourceLine" id="cb6-6" title="6"> </a></code></pre></div>
+</section><section id="ce-que-font-gitgitlabgithub" class="slide level3">
+<h3>Ce que font Git/Gitlab/Github</h3>
+<ul>
+<li class="fragment">Conserver un historique exhaustif de votre projet</li>
+<li class="fragment">Permettre la fusion des versions et la gestion de branches</li>
+<li class="fragment">Suivre l’avancement du projet, le garder en bonne santé, pour longtemps</li>
+</ul>
+</section><section id="ce-que-git-ne-fait-pas" class="slide level3">
+<h3>Ce que Git ne fait pas</h3>
+<ul>
+<li class="fragment">Gérer votre projet et réfléchir à votre place 💁</li>
+<li class="fragment">Gérer proprement la fusion de fichiers binaires complexes (images, Photoshop, Word, vidéo,…)</li>
+<li class="fragment">Gérer des collections de centaines/milliers de fichiers</li>
+<li class="fragment">Gérer de très gros fichiers (utiliser Git LFS)</li>
+</ul>
+</section><section id="pour-aller-plus-loin" class="slide level3">
+<h3>Pour aller plus loin</h3>
+<p><a href="http://rogerdudler.github.io/git-guide/">git - the simple guide</a></p>
+<p><a href="https://milesmcbain.github.io/git_4_sci/index.html">Git for scientists</a></p>
+<p><a href="https://ohshitgit.com/">Oh shit, git !</a></p>
+<p><a href="https://github.blog/2015-06-08-how-to-undo-almost-anything-with-git/">How to undo (almost) anything with Git</a></p>
+</section></section>
+    </div>
+  </div>
+
+  <script src="https://revealjs.com/lib/js/head.min.js"></script>
+  <script src="https://revealjs.com/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'https://revealjs.com/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'https://revealjs.com/plugin/zoom-js/zoom.js', async: true },
+          { src: 'https://revealjs.com/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
