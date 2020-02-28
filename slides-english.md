@@ -227,6 +227,7 @@ To stay organised :
 
 - commit messages
 - branches
+- [Files naming](https://datacarpentry.org/rr-organization1/01-file-naming/)
 
 
 ## Demos {data-background-image="https://media1.tenor.com/images/f250c971767587d622373ceb638e8fbb/tenor.gif?itemid=10300477" data-background-opacity=0.7 data-background-size=100%}
@@ -296,6 +297,8 @@ To stay organised :
 ### Now, your turn !
 
 [GitHub Guides](https://guides.github.com/)
+
+[Software Carpentry](http://swcarpentry.github.io/git-novice/)
 
 [git - the simple guide](http://rogerdudler.github.io/git-guide/)
 
