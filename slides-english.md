@@ -185,7 +185,7 @@ Spyder
 
 ### 
 
-*Uncle' Joe said real devs us use SVN*
+*Uncle' Joe said real devs' use SVN*
 
 ![](git_popularity.png){ width=70%}
 
