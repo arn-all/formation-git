@@ -84,7 +84,7 @@ _De plus en plus de scientifiques écrivent leurs articles en Markdown, et conve
 ## Comment ?
 
 - Avec n'importe quel éditeur de texte + addon Markdown. 
-- Avec Zettlr _(\*Disclaimer : Ce document à été tapé dans Zettlr)_
+- Avec Zettlr _(\*Disclaimer : [Ce document](https://raw.githubusercontent.com/arn-all/formation-git/gh-pages/redaction.md) à été tapé dans Zettlr)_
 
 
 # Versionnage et collaboration
