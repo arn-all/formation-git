@@ -1,4 +1,4 @@
-all: html pdf_beamer
+all: html html-en pdf_beamer
 
 html: slides.md
 	@echo "Generating html slides ..."
