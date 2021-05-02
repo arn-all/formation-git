@@ -5,7 +5,6 @@ title: Sauvegarder, sauvegarder, sauvegarder
 
 ## Comment naviguer dans cette présentation ?
 
-
 - D'une section à l'autre : →
 - Dans une section ↓ (ou `N`y)
 - Echap pour accéder au sommaire 
@@ -237,8 +236,6 @@ Solutions répertoriées sur [AlternativeTo](https://alternativeto.net/)
 - Éviter le SPF, toujours avoir deux supports distincts
 - Toujours vérifier (à la main) que les données restent restaurables
 - Ne pas faire confiance à un seul logiciel ou une source (ou cette formation !)
-
-
 
 <!-- 
 ## Checklist -->
