@@ -32,11 +32,6 @@ title: Sauvegarder, sauvegarder, sauvegarder
 ![](https://web.static-rmg.be/if/c_crop,w_2000,h_1335,x_0,y_0,g_center/c_fit,w_940,h_627/cec26e376e3e2789961c928b15987262.jpg){ width=60% }
 
 
-## Le chien
-
-![](https://pbs.twimg.com/media/EWOzGqvUMAUi1GQ?format=jpg&name=medium){ width=40% }
-
-
 
 ## Data Management Plan
 
