@@ -33,7 +33,7 @@ title: Sauvegarder, sauvegarder, sauvegarder
 
 
 
-## Data Management Plan
+## Le Data Management Plan
 
   + livrable de projets ANR et européens
   + un exercice qui peut s'avérer utile
@@ -192,14 +192,14 @@ Généralement:
 
 ## Tous OS :
 
-Avec interface graphique (GUI) :
+- Avec interface graphique (GUI) :
 
-  - Duplicati (gratuit, multi supports)
-  - Backblaze (60$/an, capacité illimitée)
+  + [Duplicati](https://www.duplicati.com/) (gratuit, multi supports)
+  + [Backblaze](https://www.backblaze.com/) (60$/an, capacité illimitée)
 
-En ligne de commande (CLI):
+- En ligne de commande (CLI):
 
-  - restic
+  + [restic](https://restic.readthedocs.io/)
 
 Les outils CLI sont automatisables avec systemd ou cron sur Linux/Mac.
 
@@ -207,20 +207,19 @@ Les outils CLI sont automatisables avec systemd ou cron sur Linux/Mac.
 
 Peu de solutions gratuites à part: 
 
-- Cobian Backup (GUI, gratuit)
+- [Cobian Backup](https://www.cobiansoft.com/cobianbackup.html) (GUI, gratuit, ancien)
 
-Solutions répertoriées sur [AlternativeTo](https://alternativeto.net/)
+D'autres solutions répertoriées sur [AlternativeTo](https://alternativeto.net/)
 
 ## Linux
 
-- DejaDup (GUI)
-- Duplicity (CLI)
-- Bup (CLI)
-- Borg (CLI)
+- [DejaDup](https://wiki.gnome.org/Apps/DejaDup), [Kbackup](https://apps.kde.org/fr/kbackup/) (GUI, Gnome/KDE)
+- [Duplicity](http://duplicity.nongnu.org/) (CLI, ancien et fiable)
+- [Borg](https://borgbackup.readthedocs.io/en/stable/index.html#) (CLI, plus récent et moderne)
 
 ## Mac OS
 
-- Time machine (GUI)
+- [Time machine](https://support.apple.com/fr-fr/HT201250) (GUI)
 
 
 ## Conclusion
