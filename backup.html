@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Arnaud Allera">
+  <title>Sauvegarder, sauvegarder, sauvegarder</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/moon.css" id="theme">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Sauvegarder, sauvegarder, sauvegarder</h1>
+  <p class="author">Arnaud Allera</p>
+</section>
+
+<section id="comment-naviguer-dans-cette-présentation" class="slide level2">
+<h2>Comment naviguer dans cette présentation ?</h2>
+<ul>
+<li>D’une section à l’autre : →</li>
+<li>Dans une section ↓ (ou <code>N</code>y)</li>
+<li>Echap pour accéder au sommaire</li>
+</ul>
+</section>
+<section>
+<section id="pourquoi-faire-des-sauvegardes" class="title-slide slide level1" data-background="#984447">
+<h1 data-background="#984447">Pourquoi faire des sauvegardes ?</h1>
+
+</section>
+<section id="le-feu" class="slide level2">
+<h2>Le feu</h2>
+<figure>
+<img data-src="mateis.jpg" style="width:50.0%" alt="Situation vécue ?" /><figcaption aria-hidden="true">Situation vécue ?</figcaption>
+</figure>
+</section>
+<section id="le-feu-2" class="slide level2">
+<h2>Le feu (2)</h2>
+<p><img data-src="https://img.phonandroid.com/2021/03/OVH-Incendie.jpg" style="width:60.0%" /></p>
+</section>
+<section id="le-vol" class="slide level2">
+<h2>Le vol</h2>
+<p><img data-src="https://fr.web.img5.acsta.net/pictures/17/11/15/15/14/4627669.jpg" style="width:40.0%" /></p>
+</section>
+<section id="leffacement-accidentel" class="slide level2">
+<h2>L’effacement accidentel</h2>
+<p><img data-src="https://previews.123rf.com/images/vgstudio/vgstudio1211/vgstudio121100084/16191887-portrait-of-young-man-with-shocked-facial-expression-isolated-over-white-background.jpg" style="width:40.0%" /></p>
+</section>
+<section id="le-ransomware" class="slide level2">
+<h2>Le “ransomware”</h2>
+<p><img data-src="https://web.static-rmg.be/if/c_crop,w_2000,h_1335,x_0,y_0,g_center/c_fit,w_940,h_627/cec26e376e3e2789961c928b15987262.jpg" style="width:60.0%" /></p>
+</section>
+<section id="le-chien" class="slide level2">
+<h2>Le chien</h2>
+<p><img data-src="https://pbs.twimg.com/media/EWOzGqvUMAUi1GQ?format=jpg&amp;name=medium" style="width:40.0%" /></p>
+</section>
+<section id="data-management-plan" class="slide level2">
+<h2>Data Management Plan</h2>
+<ul>
+<li>livrable de projets ANR et européens</li>
+<li>un exercice qui peut s’avérer utile</li>
+</ul>
+<p>Quelques ressources: <a href="https://bibliotheques.univ-tlse2.fr/accueil-bibliotheques/a-votre-service/donnees-de-la-recherche/accompagnement-au-pgd">1</a>, <a href="https://hal.inrae.fr/view/index/identifiant/hal-02791507">2</a>, <a href="https://anr.fr/fileadmin/documents/2019/ANR-modele-PGD.pdf">3</a>, <a href="https://urfist.univ-cotedazur.fr/portfolio_page/enjeux-des-donnees-de-la-recherche/">4</a></p>
+<p>Inclut le partage/archivage de données de recherche (e.g. <a href="https://zenodo.org/">Zenodo</a>) non traités ici</p>
+</section>
+<section id="les-grands-principes" class="slide level2">
+<h2>Les grands principes</h2>
+<ul>
+<li>souvent</li>
+<li>tout (toutes les versions de tous mes fichiers, sauf exceptions)</li>
+<li>facile</li>
+<li>efficace</li>
+<li>robuste</li>
+<li>vérifiable (cohérente et à jour)</li>
+<li>paramétrable</li>
+<li>redondant (plusieurs supports et emplacements)</li>
+<li>accessible</li>
+<li>documentée et structurée</li>
+</ul>
+</section>
+<section id="comment-faire" class="slide level2" data-background="#984447">
+<h2 data-background="#984447">Comment faire ?</h2>
+</section></section>
+<section>
+<section id="que-stocker" class="title-slide slide level1" data-background="#984447">
+<h1 data-background="#984447">Que stocker ?</h1>
+
+</section>
+<section id="les-objets-à-stocker" class="slide level2">
+<h2>les objets à stocker</h2>
+<p>Généralement:</p>
+<ul>
+<li>données brutes</li>
+<li>données traitées / visualisations</li>
+<li>le code, les logiciels</li>
+<li>les productions scientifiques (article, thèse, présentations)</li>
+<li>les outils de travail (todo, fiches,…)</li>
+</ul>
+<p>→ problématiques différentes</p>
+</section>
+<section id="les-questions-à-se-poser" class="slide level2">
+<h2>Les questions à se poser</h2>
+<ul>
+<li>volume de données</li>
+<li>importance <em>(article vs todolist)</em></li>
+<li>type de fichiers <em>(texte/binaire/compressé?)</em></li>
+<li>fréquence d’accès</li>
+<li>fréquence de modification</li>
+<li>nombre de contributeurs (→ git?)</li>
+<li>durée de stockage souhaitée</li>
+<li>Single Point of Failure (SPF)</li>
+</ul>
+</section></section>
+<section>
+<section id="où-stocker" class="title-slide slide level1" data-background="#984447">
+<h1 data-background="#984447">Où stocker ?</h1>
+
+</section>
+<section id="sa-mémoire" class="slide level2">
+<h2>sa mémoire</h2>
+<ul>
+<li>on compte beaucoup dessus !</li>
+<li>capacité limitée → <a href="https://haveibeenpwned.com/">mots de passe réutilisés</a></li>
+<li>oublis</li>
+<li>gestionnaires de mots de passe les plus utilisés
+<ul>
+<li>Bitwarden.com (en ligne, gratuit, open source)</li>
+<li>1password.com (en ligne, 3$/mois)</li>
+<li>Keepass (local, logiciel libre)</li>
+<li>Chrome ou firefox (intégré)</li>
+</ul></li>
+</ul>
+</section>
+<section id="disque-durs-externes" class="slide level2">
+<h2>Disque dur(s) externe(s)</h2>
+<ul>
+<li>“my precious”</li>
+<li>support fragile</li>
+<li>soumis à l’usure (comme nous tous)</li>
+<li><em>toujours</em> éviter de compter sur un seul DD</li>
+<li>vitesse de transfert relativement limitée</li>
+<li>comment stocker efficacement dessus ?</li>
+<li>pas infaillible</li>
+</ul>
+</section>
+<section id="nas" class="slide level2">
+<h2>NAS</h2>
+<p>ou “support de stockage en réseau”</p>
+<ul>
+<li>répond aux problèmes de fiabilité et de vitesse d’accès des DD grâce à plusieurs disques</li>
+<li>coût / mise en place / entretien → souvent mutualisé</li>
+<li><strong>pas infaillible</strong> → un seul lieu, un seul appareil</li>
+<li>pas forcément de <strong>backup</strong> (s’en assurer si possible)</li>
+<li>pas forcément d’<strong>historique</strong> (contre la suppression accidentelle)</li>
+<li>panne <code>home_INSA</code> en 2017</li>
+</ul>
+<p><strong>Avoir un plan s’il est inaccessible !</strong></p>
+</section>
+<section id="cloud" class="slide level2">
+<h2>cloud</h2>
+<ul>
+<li>différentes offres et outils</li>
+<li>du plus basique au plus automatisé</li>
+<li>prix à l’usage, très variables</li>
+<li>Cloud act (USA) → OVH, Scaleway</li>
+<li><strong>pas infaillible</strong> (mais tâche de s’en rapprocher)</li>
+</ul>
+</section>
+<section id="les-questions-à-se-poser-1" class="slide level2">
+<h2>Les questions à se poser</h2>
+<ul>
+<li>adéquation support/usage/données</li>
+<li>recommandations institutionnelles</li>
+<li>fonctionnalités</li>
+<li>limites d’accès (par politique, prix ou techniques)</li>
+<li>contraintes</li>
+</ul>
+</section></section>
+<section>
+<section id="comment-stocker" class="title-slide slide level1" data-background="#984447">
+<h1 data-background="#984447">Comment stocker ?</h1>
+
+</section>
+<section id="petit-lexique" class="slide level2">
+<h2>Petit lexique</h2>
+</section>
+<section id="chiffré" class="slide level2">
+<h2>“Chiffré”</h2>
+<ul>
+<li>illisible sans une clé secrète</li>
+<li>quasiment pas de ralentissement</li>
+<li>essentiel pour le stockage non-local (surtout sous Cloud Act)</li>
+<li>autrement, accès physique = accès à toutes les données</li>
+<li><strong>perte de la clé = perte des données !</strong></li>
+</ul>
+</section>
+<section id="compression" class="slide level2">
+<h2>Compression</h2>
+<ul>
+<li>algorithme permettant d’utiliser moins de bits pour stocker la même chose</li>
+<li>destructif (pour images, son, vidéo) ou non (le reste)</li>
+<li>gain de place important (variable de x2 à x1000)</li>
+<li>très efficace sur données brutes au format texte</li>
+<li>aucun gain sur <code>.jpg, .mp3, .ppt, .xls, .doc, .mp4,...</code> qui sont déjà compressés</li>
+<li>ralentissement conséquent</li>
+<li>compromis vitesse/taille possible</li>
+</ul>
+</section>
+<section id="déduplication" class="slide level2">
+<h2>Déduplication</h2>
+<ul>
+<li>Evite de réécrire plusieurs fois la même chose (gain de place et temps)</li>
+<li>Si j’ai le même fichier à deux emplacements, il n’est sauvegardé qu’une fois</li>
+<li>fonctionne par découpage en blocs et comparaison des blocs</li>
+</ul>
+</section>
+<section id="incrémental" class="slide level2">
+<h2>Incrémental</h2>
+<ul>
+<li>Seul l’écart entre deux versions est sauvegardé (nouveaux blocs)</li>
+<li>Les changements s’ajoutent comme les maillons d’une chaine</li>
+<li>Gain de temps et de volume à transférer/écrire</li>
+<li>Risque de compromission en amont → faire une vérification régulière</li>
+</ul>
+</section>
+<section id="autres-propriétés" class="slide level2">
+<h2>Autres propriétés</h2>
+<ul>
+<li>multi-plateforme → fonctionne sur plusieurs OS</li>
+<li>multi-supports → gère différents supports (ou backends)</li>
+</ul>
+</section>
+<section id="outils-de-sauvegarde" class="slide level2" data-background="#984447">
+<h2 data-background="#984447">outils de sauvegarde</h2>
+</section>
+<section id="versionnement" class="slide level2">
+<h2>versionnement</h2>
+<ul>
+<li>git</li>
+<li>github / gitlab (bitbucket)</li>
+<li>Instances Gitlab institutionnelles</li>
+</ul>
+<p>Voir formation Git</p>
+</section>
+<section id="quelques-solutions" class="slide level2">
+<h2>Quelques solutions</h2>
+</section>
+<section id="tous-os" class="slide level2">
+<h2>Tous OS :</h2>
+<p>Avec interface graphique (GUI) :</p>
+<ul>
+<li>Duplicati (gratuit, multi supports)</li>
+<li>Backblaze (60$/an, capacité illimitée)</li>
+</ul>
+<p>En ligne de commande (CLI):</p>
+<ul>
+<li>restic</li>
+</ul>
+<p>Les outils CLI sont automatisables avec systemd ou cron sur Linux/Mac.</p>
+</section>
+<section id="windows" class="slide level2">
+<h2>Windows</h2>
+<p>Peu de solutions gratuites à part:</p>
+<ul>
+<li>Cobian Backup (GUI, gratuit)</li>
+</ul>
+<p>Solutions répertoriées sur <a href="https://alternativeto.net/">AlternativeTo</a></p>
+</section>
+<section id="linux" class="slide level2">
+<h2>Linux</h2>
+<ul>
+<li>DejaDup (GUI)</li>
+<li>Duplicity (CLI)</li>
+<li>Bup (CLI)</li>
+<li>Borg (CLI)</li>
+</ul>
+</section>
+<section id="mac-os" class="slide level2">
+<h2>Mac OS</h2>
+<ul>
+<li>Time machine (GUI)</li>
+</ul>
+</section>
+<section id="conclusion" class="slide level2">
+<h2>Conclusion</h2>
+<ul>
+<li>Pas de sauvegarde parfaite, très difficile de tout concilier</li>
+<li>Souvent un coût non nul</li>
+<li>Les clés/mots de passe souvent le point le plus critique</li>
+<li>Éviter le SPF, toujours avoir deux supports distincts</li>
+<li>Toujours vérifier (à la main) que les données restent restaurables</li>
+<li>Ne pas faire confiance à un seul logiciel ou une source (ou cette formation !)</li>
+</ul>
+<!-- 
+## Checklist -->
+</section></section>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+
+  <!-- reveal.js plugins -->
+  <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+      
+        // Push each slide change to the browser history
+        history: true,
+
+        // reveal.js plugins
+        plugins: [
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>

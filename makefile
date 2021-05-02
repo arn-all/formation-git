@@ -2,7 +2,8 @@ all: html html-en pdf_beamer
 
 html: slides.md
 	@echo "Generating html slides ..."
-	pandoc -t revealjs -s -o index.html slides.md -V theme=night
+	pandoc -t revealjs -s -o index.html slides.md -V theme=moon
+	pandoc -t revealjs -s -o backup.html backup.md  -V theme=moon
 pdf_report: slides.md
 	@echo "Generating PDF report..."
 	pandoc slides.md -o report.pdf --pdf-engine=xelatex
