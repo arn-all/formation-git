@@ -6,7 +6,7 @@ title: Sauvegarder, sauvegarder, sauvegarder
 ## Comment naviguer dans cette présentation ?
 
 - D'une section à l'autre : →
-- Dans une section ↓ (ou `N`y)
+- Dans une section ↓ (ou `N`)
 - Echap pour accéder au sommaire 
 
 # Pourquoi faire des sauvegardes ? {data-background=#984447}
