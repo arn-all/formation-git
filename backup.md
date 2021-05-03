@@ -170,6 +170,7 @@ Généralement:
 - Seul l'écart entre deux versions est sauvegardé (nouveaux blocs)
 - Les changements s'ajoutent comme les maillons d'une chaine
 - Gain de temps et de volume à transférer/écrire
+- Permet de multiplier les dates disponibles (snapshots)
 - Risque de compromission en amont → faire une vérification régulière
 
 
@@ -178,7 +179,7 @@ Généralement:
 - multi-plateforme → fonctionne sur plusieurs OS
 - multi-supports → gère différents supports (ou backends)
 
-## outils de sauvegarde {data-background=#984447}
+# outils de sauvegarde {data-background=#984447}
 
 ##  versionnement
 
@@ -188,14 +189,14 @@ Généralement:
 
   Voir formation Git
 
-## Quelques solutions
+## Quelques solutions de backup
 
 ## Tous OS :
 
 - Avec interface graphique (GUI) :
 
   + [Duplicati](https://www.duplicati.com/) (gratuit, multi supports)
-  + [Backblaze](https://www.backblaze.com/) (60$/an, capacité illimitée)
+  + [Backblaze](https://www.backblaze.com/) (60$/an avec stockage cloud illimité)
 
 - En ligne de commande (CLI):
 
@@ -205,11 +206,10 @@ Les outils CLI sont automatisables avec systemd ou cron sur Linux/Mac.
 
 ## Windows
 
-Peu de solutions gratuites à part: 
 
+- Depuis Windows 7, sauvegarde et historique intégrées [[support MS](https://support.microsoft.com/fr-fr/windows/sauvegarde-et-restauration-dans-windows-10-352091d2-bb9d-3ea3-ed18-52ef2b88cbef)] [[exemple de tuto](https://www.howtogeek.com/74623/how-to-use-the-new-file-history-feature-in-windows-8/)]
 - [Cobian Backup](https://www.cobiansoft.com/cobianbackup.html) (GUI, gratuit, ancien)
-
-D'autres solutions répertoriées sur [AlternativeTo](https://alternativeto.net/)
+- Quelques autres solutions sur [AlternativeTo](https://alternativeto.net/)
 
 ## Linux
 
@@ -218,6 +218,8 @@ D'autres solutions répertoriées sur [AlternativeTo](https://alternativeto.net/
 - [Borg](https://borgbackup.readthedocs.io/en/stable/index.html#) (CLI, plus récent et moderne)
 
 ## Mac OS
+
+Outil intégré:
 
 - [Time machine](https://support.apple.com/fr-fr/HT201250) (GUI)
 
